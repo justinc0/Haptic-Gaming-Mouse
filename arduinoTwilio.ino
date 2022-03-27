@@ -1,20 +1,19 @@
 //______________Setup WIFI Twilio __________________
 #include "twilio.hpp"
 
-// Set these - but DON'T push them to GitHub!
-static const char *ssid = "Pixel_3895";
-static const char *password = "yit8ekwhjrtvme7";
+static const char *ssid = ""; //Replace with network SSID
+static const char *password = ""; //Replace with network password
 
 // Values from Twilio (find them on the dashboard)
-static const char *account_sid = "ACab292e02481b74425c7973ae736a0a34";
-static const char *auth_token = "64e69600bebba562218e6249615644b5";
+static const char *account_sid = "";//Replace with Twilio Account SID
+static const char *auth_token = "";//Replace with Twilio Authentication token
 // Phone number should start with "+<countrycode>"
-static const char *from_number = "+19125042040";
+static const char *from_number = ""; //Replace with number being sent from
 
 // You choose!
 // Phone number should start with "+<countrycode>"
-static const char *to_number = "+15712948641";
-static const char *message = "Sent from my ESP32";
+static const char *to_number = ""; //Replace with number being sent to
+static const char *message = ""; //message to change
 int clickcount = 0;
 int resetcount = 0;
 int delaytimer = 0;
@@ -41,26 +40,13 @@ int check=0;
 void setup() {
   // ___________ Connect to WIFI and send message ______________
   Serial.begin(115200);
-  /*Serial.print("Connecting to WiFi network ;");
-  Serial.print(ssid);
-  Serial.println("'...");*/
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
     //Serial.println("Connecting...");
     delay(500);
   }
-  //Serial.println("Connected!");
 
-
-
-/*
-  //____________Setup Timer_________________________________
- 
-  timer = timerBegin(0, 80, true);
-  timerAttachInterrupt(timer, &onTimer, true);
-  timerAlarmWrite(timer, 1000000, true);
-  timerAlarmEnable(timer);*/
   
 }
 
@@ -99,16 +85,16 @@ void loop() {
    int maxValue = 1000; 
    int constrainedValue = constrain(sensorValue, minValue, maxValue);
   
-    int lite = map(constrainedValue, minValue, maxValue, 0, 255);
+    int light = map(constrainedValue, minValue, maxValue, 0, 255);
     
     
-   int rotashun = map (constrainedValue, minValue, maxValue, 1000, 300);
-    if(rotashun < 1000){ 
+   int rotation = map (constrainedValue, minValue, maxValue, 1000, 300);
+    if(rotation < 1000){ 
       clickcount += 1; //add to click count
 
     }
-    Serial.println(rotashun);
-    if(rotashun<=400){ //When player presses too hard
+    Serial.println(rotation);
+    if(rotation<=400){ //When player presses too hard              
       //Turn on LED
       digitalWrite(ledPin,HIGH);
 
@@ -127,26 +113,13 @@ void loop() {
     }
     delay(300);
     delaytimer += 300;
-  
+    //Run motor
    if (sensorValue>0 & (check==0)){
       StepsRequired  =  - STEPS_PER_OUT_REV / 2;   
-      steppermotor.setSpeed(rotashun);  
+      steppermotor.setSpeed(rotation);  
       steppermotor.step(1);
       
-   }/*
-   //____________Counter code__________________
-   if (interruptCounter > 0) {
- 
-    portENTER_CRITICAL(&timerMux);
-    interruptCounter--;
-    portEXIT_CRITICAL(&timerMux);
- 
-    totalInterruptCounter++;
- 
-    //Serial.println("An interrupt as occurred. Total number: ");
-    //Serial.println(totalInterruptCounter);
- 
-  }*/
+   }
 
 
   
