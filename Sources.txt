@@ -1,0 +1,40 @@
+Sources:
+
+Force Sensor Tutorial and Arduino Constrain and Mapping Function Examples:
+https://docs.google.com/document/u/1/d/e/2PACX-1vRJlcuHmS8DSjYGxeFZgmCgwqf826ObjpVnyuDJLC3lwqyB7lF-FjW_9n9BjweI33in15l_22NIDcPa/pub
+
+Reading Analog Values with ESP32:
+https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/#:~:text=The%20ESP32%20DEVKIT%20V1%20DOIT,t%20have%20a%20linear%20behavior.
+
+ESP32 Board Installation/Setup:
+https://www.hackster.io/abdularbi17/how-to-install-esp32-board-in-arduino-ide-1cd571
+
+Writing Analog Values with ESP32:
+https://deepbluembedded.com/esp32-pwm-tutorial-examples-analogwrite-arduino/
+
+Twilio ESP32 Client
+https://github.com/ademuri/twilio-esp32-client
+
+Stepper Motor CAD model used as frame of reference to build stepper motor cap CAD:
+https://grabcad.com/library/motor-model-28byj-48-5v-1
+
+ESP32 Pinout Diagram
+https://esp32.com/viewtopic.php?t=11904
+
+Presentation Images:
+https://screenrant.com/ps5-controller-what-haptic-feedback-actually-does/
+https://cck-law.com/blog/long-term-disability-ltd-benefits-for-carpal-tunnel-syndrome/
+https://cdn2.vectorstock.com/i/1000x1000/10/81/mobile-phone-with-sms-message-symbol-flat-icon-vector-7561081.jpg
+https://staticg.sportskeeda.com/editor/2021/03/14edc-16165001528617-800.jpg
+https://www.gamedesigning.org/wp-content/uploads/2020/09/Video-Game-Immersion.jpg
+https://www.gamebyte.com/we-might-have-found-the-worst-gaming-set-ups-of-all-time/
+https://mms.businesswire.com/media/20181015005920/en/526457/22/Twilio_logo_red.jpg
+https://thermaltake.azureedge.net/pub/media/catalog/product/cache/6bf0ed99c663954fafc930039201ed07/l/2/l20m01.jpg
+https://www.allelectronics.com/mas_assets/cache/image/4/f/b/f/20415.Jpg
+https://www.unoluxns.com/images/upload/Image/1435227301.82544/main/full.jpg
+https://media.elektor.com/media/catalog/product/cache/2b4bee73c90e4689bbc4ca8391937af9/e/s/esp32-devkitc-32d.jpg
+https://www.smart-prototyping.com/image/cache/data/SKU%20Photos/10100174/1-750x750.jpg
+https://cdn.sparkfun.com//assets/parts/2/9/6/7/09375-1.jpg
+https://slidesgo.com/theme/video-game-pitch-deck#search-tech+gaming&position-3&results-13
+
+
